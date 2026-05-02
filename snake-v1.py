@@ -16,7 +16,8 @@ can = Canvas(tk, width=500, height=500, bg='black')
 
 # On affiche le canevas
 can.pack()
-
+can.create_rectangle(10, 30, 10, 60, outline='yellow', fill='green')
+can.create_oval(100, 200, 120, 120, outline= 'red', fill='blue')
 # lancement de la boucle principale qui écoute les évènements (claviers...)
 tk.mainloop() # Cet appel doit être la derniere instruction du programme
 
